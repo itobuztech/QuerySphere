@@ -17,7 +17,7 @@ app_port: 7860
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> **Enterprise-Grade RAG Platform with Multi-Format Document Ingestion, Hybrid Retrieval, and Zero API Costs**
+> **MVP-Grade RAG Platform with Multi-Format Document Ingestion, Hybrid Retrieval, and Zero API Costs**
 
 </div>
 
