@@ -30,10 +30,10 @@ Pillow==10.0.1
 opencv-python-headless==4.8.1.78
 
 # LLM/Indexing
-llama-index>=0.10.20
-llama-index-core>=0.10.20
-llama-index-embeddings-huggingface>=0.2.0
-llama-index-llms-openai>=0.1.11
+llama-index==0.10.20
+llama-index-core==0.10.20
+llama-index-embeddings-huggingface==0.2.0
+llama-index-llms-openai==0.1.31
 
 # Archive Handling
 py7zr==0.20.6
