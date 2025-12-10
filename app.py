@@ -743,7 +743,7 @@ class AppState:
                 vector_store_status = "Ready"
         
         # Get model info
-        current_model   = settings.OLLAMA_MODEL
+        current_model   = settings.OPENAI_MODEL
         embedding_model = settings.EMBEDDING_MODEL
         
         # Uptime
@@ -1196,7 +1196,7 @@ async def get_system_info():
         llm_info = state.llm_client.get_provider_info()
     
     # Get current configuration
-    current_config = {"inference_model"  : settings.OLLAMA_MODEL,
+    current_config = {"inference_model"  : settings.OPENAI_MODEL,
                       "embedding_model"  : settings.EMBEDDING_MODEL,
                       "vector_weight"    : settings.VECTOR_WEIGHT,
                       "bm25_weight"      : settings.BM25_WEIGHT,
@@ -1610,7 +1610,7 @@ async def chat(request: ChatRequest):
     # Check LLM health (required for both general and RAG queries)
     if not state.llm_client.check_health():
         raise HTTPException(status_code = 503,
-                            detail      = "LLM service unavailable. Please ensure Ollama is running.",
+                            detail      = "LLM service unavailable. Please ensure OpenAI API Key is availabale or Ollama is running.",
                            )
     
     try:
@@ -1812,7 +1812,7 @@ async def get_configuration():
     # Get system health
     health_status = state.get_system_health()
     
-    return {"configuration" : {"inference_model"   : settings.OLLAMA_MODEL,
+    return {"configuration" : {"inference_model"   : settings.OPENAI_MODEL,
                                "embedding_model"   : settings.EMBEDDING_MODEL,
                                "chunking_strategy" : "adaptive",
                                "chunk_size"        : settings.FIXED_CHUNK_SIZE,
