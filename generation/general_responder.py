@@ -31,7 +31,7 @@ class GeneralResponder:
         
         # System prompt for general conversation
         self.system_prompt      = """
-                                     You are a helpful, friendly AI assistant. You're part of a larger system called the "AI Universal Knowledge Ingestion System" which specializes in document analysis and retrieval.
+                                     You are a helpful, friendly AI assistant. You're part of a larger system called the "QuerySphere" which specializes in document analysis and retrieval.
 
                                      When users ask general questions, answer helpfully and conversationally. When they ask about your capabilities, explain that you can:
                                      1. Answer general knowledge questions
