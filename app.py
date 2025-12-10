@@ -1069,13 +1069,13 @@ async def initialize_components(state: AppState):
         logger.info("Retrieval components initialized")
         
         # Initialize generation components
-        state.response_generator = get_response_generator(provider   = LLMProvider.OLLAMA,
-                                                          model_name = settings.OLLAMA_MODEL,
+        state.response_generator = get_response_generator(provider   = LLMProvider.OPENAI,
+                                                          model_name = settings.OPENAI_MODEL,
                                                          )
 
-        state.llm_client         = get_llm_client(provider = LLMProvider.OLLAMA)
+        state.llm_client         = get_llm_client(provider = LLMProvider.OPENAI)
 
-        logger.info(f"Generation components initialized: model={settings.OLLAMA_MODEL}")
+        logger.info(f"Generation components initialized: model={settings.OPENAI_MODEL}")
 
         # Check LLM health
         if state.llm_client.check_health():
