@@ -7,8 +7,9 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libmagic1 \
     file \
-    # OpenCV dependencies
-    libgl1-mesa-glx \
+    # OpenCV dependencies for Debian 12
+    libglx-mesa0 \
+    libgl1 \
     libglib2.0-0 \
     libsm6 \
     libxext6 \
@@ -52,9 +53,6 @@ EXPOSE 7860
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "import requests; requests.get('http://localhost:7860/api/health', timeout=5)" || exit 1
-
-# Download PaddleOCR models during build (optional, but speeds up first run)
-RUN python -c "from paddleocr import PaddleOCR; PaddleOCR(use_angle_cls=True, lang='en', use_gpu=False, show_log=False)" || true
 
 # Start application with optimized settings for Hugging Face Spaces
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860", "--workers", "1", "--timeout-keep-alive", "120"]
