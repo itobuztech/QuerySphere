@@ -1,7 +1,7 @@
-# AI Universal Knowledge Ingestion System - API Documentation
+# QuerySphere - API Documentation
 
 ## Overview
-The AI Universal Knowledge Ingestion System is a production-grade RAG (Retrieval-Augmented Generation) platform that enables organizations to unlock knowledge from multiple document sources while maintaining complete data privacy and eliminating API costs.
+The QuerySphere is a MVP level RAG (Retrieval-Augmented Generation) platform that enables organizations to unlock knowledge from multiple document sources while maintaining complete data privacy and eliminating API costs.
 
 **Base URL:** http://localhost:8000 (or your deployed domain)
 

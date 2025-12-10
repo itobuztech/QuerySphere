@@ -46,7 +46,7 @@ A MVP grade Retrieval-Augmented Generation (RAG) system that enables organizatio
 
 ## 🎯 Overview
 
-The AI Universal Knowledge Ingestion System addresses a critical enterprise pain point: **information silos that cost organizations 20% of employee productivity**. Unlike existing solutions (Humata AI, ChatPDF, NotebookLM) that charge $49/user/month and rely on expensive cloud LLM APIs, this system offers:
+The QuerySphere addresses a critical enterprise pain point: **information silos that cost organizations 20% of employee productivity**. Unlike existing solutions (Humata AI, ChatPDF, NotebookLM) that charge $49/user/month and rely on expensive cloud LLM APIs, this system offers:
 
 ### **Core Value Propositions**
 

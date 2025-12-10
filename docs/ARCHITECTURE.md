@@ -1,4 +1,4 @@
-# AI Universal Knowledge Ingestion System - Technical Architecture Document
+# QuerySphere - Technical Architecture Document
 
 ## 1. System Overview
 
@@ -845,7 +845,7 @@ def check_rate_limit(request: Request, limit: int = 100):
 
 ## Conclusion
 
-This architecture document provides a comprehensive technical blueprint for the AI Universal Knowledge Ingestion System. The modular design, clear separation of concerns, and production-ready considerations make this system suitable for enterprise deployment while maintaining flexibility for future enhancements.
+This architecture document provides a comprehensive technical blueprint for the QuerySphere system. The modular design, clear separation of concerns, and production-ready considerations make this system suitable for enterprise deployment while maintaining flexibility for future enhancements.
 
 ### Key Architectural Strengths
 
@@ -879,4 +879,4 @@ Author: Satyaki Mitra
 
 ---
 
-> This document is part of the AI Universal Knowledge Ingestion System technical documentation suite.
+> This document is part of the QuerySphere technical documentation suite.

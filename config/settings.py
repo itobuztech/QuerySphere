@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     IS_HF_SPACE                   : bool                                                     = Field(default = os.getenv("SPACE_ID") is not None, description = "Running in HF Space")
     
     # Application Settings
-    APP_NAME                      : str                                                      = "AI Universal Knowledge Ingestion System"
+    APP_NAME                      : str                                                      = "QuerySphere"
     APP_VERSION                   : str                                                      = "1.0.0"
     DEBUG                         : bool                                                     = Field(default = False, description = "Enable debug mode")
     HOST                          : str                                                      = Field(default = "0.0.0.0", description = "API host")
