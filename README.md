@@ -713,12 +713,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👤 Author
-
-Satyaki Mitra | Data Scientist | Generative-AI Enthusiast
-
----
-
 <div align="center">
 
 **Built with ❤️ for the open-source community**
