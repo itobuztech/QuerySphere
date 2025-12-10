@@ -7,7 +7,7 @@ sdk: docker
 pinned: false
 license: mit
 app_port: 7860
-short_description: RAG platform for document Q&A with zero API costs (local LLM) or cloud deployment with OpenAI integration.
+short_description: RAG platform for document Q&A with local LLM or cloud deployment integration.
 ---
 
 <div align="center">
